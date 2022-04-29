@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+
+	/* TYPOGRAPHY  */
+	/* Font Size  */
+
+	/* try out this new responsive font calculator  */
+	/* --fs-auto-calc: calc(0.658vmin + 0.75rem); */
+	/* end of font calculator */
+	--fs-d: 18px;
+	--fs-p: var(--fs-d);
+	--fs-header: calc(var(--fs-d) * 1.618);
+	--fs-header-1: calc(var(--fs-header) + 1rem);
+	font-size: var(--fs-p);
+
+	/* WEIGHT  */
+	--fw-200: 200;
+	--fw-400: 400;
+	--fw-600: 600;
+	--fw-700: 700;
+	--fw-900: 900;
+	font-family: 'Karla', sans-serif;
+
+	/* LINE HEIGHT  */
+	line-height: 168.8%;
+
+	/* END OF 'TYPO INIT'  */
+
+	/* COLORS  */
+	/* Color by hsl( a b c / opacity)  */
+	/* Primary*/
+	--clr-p-blue: 233 100% 69%;
+	--clr-p-cyan: 171 66% 44%;
+
+	/* Gradient  */
+	--clr-p-grad1: 6 100% 80%;
+	--clr-p-grad2: 335 100% 65%;
+
+	/* Neutral  */
+	--clr-n-light-gray: 201 11% 66%;
+	--clr-n-gray-blue: 210 10% 33%;
+}
+
+body {
+	font-family: 'Bai Jamjuree', sans-serif;
+	color: hsl(var(--clr-n-light-gray));
+	font-size: var(--fs-p);
+	font-weight: var(--fw-400);
+	padding: 3rem 2rem;
+	background-image: url(./images/bg-header-mobile.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-align: center;
+}
+.app__download {
+	padding: 4rem 0;
+}
+.header__logo {
+	padding-bottom: 4em;
+}
+.header__heading {
+	font-size: 1.7rem;
+	color: hsl(var(--clr-n-gray-blue));
+	font-weight: var(--fw-700);
+	line-height: 2.3rem;
+	padding-bottom: 2rem;
+}
+.header__content {
+	padding-bottom: 2.2rem;
+	font-size: 0.9rem;
+}
+.btn__download--ios,
+.btn__download--mac {
+	width: 100%;
+	font-weight: var(--fw-600);
+	margin-bottom: 1.2rem;
+	padding: 0.6rem;
+	color: white;
+	border: 1px solid transparent;
+	background-color: hsl(var(--clr-p-blue));
+	box-shadow: 1px 4px 5px 4px hsl(var(--clr-p-blue) / 0.5);
+	border-radius: 2rem;
+	cursor: pointer;
+}
+.btn__download--ios {
+	background-color: hsl(var(--clr-p-cyan));
+	box-shadow: 1px 4px 5px 4px hsl(var(--clr-p-cyan) / 0.5);
+}
+.btn__download--ios:hover,
+.btn__download--ios:focus,
+.btn__download--mac:hover,
+.btn__download--mac:focus {
+	opacity: 0.5;
+}
+
+.features__sumup--heading {
+	font-size: 1.7rem;
+	color: hsl(var(--clr-n-gray-blue));
+	font-weight: var(--fw-700);
+	line-height: 2.3rem;
+	padding-bottom: 1.2rem;
+}
+.features__sumup--content {
+	padding-bottom: 2.2rem;
+	font-size: 0.9rem;
+}
+.features__details--img {
+	background-image: url(./images/image-computer.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 25vh;
+	margin-bottom: 2rem;
+}
+.features__details--items--header {
+	font-size: 1.2rem;
+	color: hsl(var(--clr-n-gray-blue));
+	font-weight: var(--fw-700);
+}
+.features__details--items--content {
+	font-size: 0.9rem;
+	padding-bottom: 1.2rem;
+}
+.features__sumup {
+	margin: 5rem 0 0rem 0;
+}
+.features__sumup--img {
+	background-image: url(./images/image-devices.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 25vh;
+	margin-bottom: 2rem;
+}
+.customers__logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+.customers__logo img {
+	width: 30%;
+	padding-top: 3rem;
+}
+.footer__page {
+	background-color: hsl(var(--clr-n-light-gray) / 0.2);
+	margin: 0 -2rem -3rem -2rem;
+	padding: 3rem 2rem;
+}
+.footer__logo {
+	width: 50px;
+}
+
+ul {
+	margin-bottom: 1rem;
+	list-style: none;
+	padding: 0;
+}
+li {
+	padding: 0.8rem;
+	font-size: 0.9rem;
+	font-weight: var(--fw-400);
+}
+a {
+	text-decoration: none;
+	color: hsl(var(--clr-n-light-gray));
+}
+a:focus,
+a:hover {
+	color: hsl(var(--clr-p-cyan));
+}
+.footer__social img {
+	width: 30px;
+	margin-right: 1.5rem;
+}
+.footer__social img:last-child {
+	margin-right: 0;
+}
