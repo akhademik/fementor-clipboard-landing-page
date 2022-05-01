@@ -1,0 +1,306 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Karla", sans-serif;
+  line-height: 168.8%;
+}
+@media screen and (min-width: 640px) {
+  *,
+*::before,
+*::after {
+    font-size: 20px;
+  }
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  color: rgb(159, 171, 178);
+  font-weight: 400;
+  padding: 3rem 2rem;
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+@media screen and (min-width: 640px) {
+  body {
+    background-image: url(../images/bg-header-desktop.png);
+  }
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  color: inherit;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 640px) {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 0;
+  }
+}
+
+li {
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 640px) {
+  li {
+    text-align: left;
+    padding: 0 2rem 0 0;
+  }
+  li:nth-child(2), li:nth-child(4) {
+    grid-row: 2;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  color: rgb(159, 171, 178);
+}
+a:focus, a:hover {
+  color: rgb(38, 186, 164);
+}
+
+.app__download {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo {
+  padding-bottom: 4rem;
+}
+@media screen and (min-width: 640px) {
+  .header__logo {
+    max-width: 5rem;
+    padding-bottom: 2em;
+  }
+}
+.header__heading {
+  font-size: 1.6rem;
+  color: rgb(76, 84, 93);
+  font-weight: 700;
+  line-height: 2.3rem;
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 640px) {
+  .header__heading {
+    padding-bottom: 1rem;
+  }
+}
+.header__content {
+  padding-bottom: 2.2rem;
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 640px) {
+  .header__content {
+    max-width: 590px;
+  }
+}
+
+.features__sumup {
+  margin: 5rem 0 0rem 0;
+}
+.features__sumup--heading {
+  font-size: 1.7rem;
+  color: rgb(76, 84, 93);
+  font-weight: 700;
+  line-height: 2.3rem;
+  padding-bottom: 1.2rem;
+}
+.features__sumup--content {
+  padding-bottom: 2.2rem;
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 640px) {
+  .features__sumup--content {
+    max-width: 590px;
+  }
+}
+.features__sumup--img {
+  background-image: url(../images/image-devices.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25vh;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 640px) {
+  .features__sumup--img {
+    min-width: 900px;
+    min-height: 46vh;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 640px) {
+  .features__sumup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.features__details--img img {
+  max-width: 100%;
+}
+@media screen and (min-width: 640px) {
+  .features__details--img img {
+    margin-left: -50%;
+  }
+}
+.features__details--items--header {
+  font-size: 1.2rem;
+  color: rgb(76, 84, 93);
+  font-weight: 700;
+}
+@media screen and (min-width: 640px) {
+  .features__details--items--header {
+    text-align: left;
+  }
+}
+.features__details--items--header:first-child {
+  margin-top: 1.5rem;
+}
+.features__details--items--content {
+  font-size: 0.9rem;
+  padding-bottom: 1.2rem;
+}
+@media screen and (min-width: 640px) {
+  .features__details--items--content {
+    text-align: left;
+    max-width: 400px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .features__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 640px) {
+  .features__details__ios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.features__details__ios--heading {
+  font-size: 1.2rem;
+  color: rgb(76, 84, 93);
+  font-weight: 700;
+  line-height: 2.3rem;
+  padding: 1.2rem 0;
+}
+.features__details__ios--content {
+  padding-bottom: 1.5rem;
+}
+@media screen and (min-width: 640px) {
+  .features__details__ios--content {
+    font-size: 0.8rem;
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .features__details__ios--item {
+    padding-right: 1.2rem;
+  }
+}
+.features__details__ios--item img {
+  height: 40px;
+}
+
+.btn__download--ios, .btn__download--mac {
+  width: 100%;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  padding: 0.6rem;
+  color: white;
+  border: 1px solid transparent;
+  background-color: rgb(97, 115, 255);
+  box-shadow: 1px 4px 5px 4px rgba(97, 115, 255, 0.5);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+@media screen and (min-width: 640px) {
+  .btn__download--ios, .btn__download--mac {
+    width: 240px;
+  }
+}
+.btn__download--ios:hover, .btn__download--ios:focus, .btn__download--mac:hover, .btn__download--mac:focus {
+  opacity: 0.5;
+}
+.btn__download--ios {
+  background-color: rgb(38, 186, 164);
+  box-shadow: 1px 4px 5px 4px rgba(38, 186, 164, 0.5);
+}
+@media screen and (min-width: 640px) {
+  .btn__download--ios {
+    margin-right: 1.5rem;
+  }
+}
+
+.customers__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 640px) {
+  .customers__logo {
+    margin-top: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.customers__logo img {
+  max-width: 150px;
+  padding-top: 3rem;
+}
+@media screen and (min-width: 640px) {
+  .customers__logo img {
+    padding-top: 0;
+    margin-right: 2rem;
+  }
+}
+
+.footer__page {
+  background-color: rgba(159, 171, 178, 0.2);
+  margin: 0 -2rem -3rem -2rem;
+  padding: 3rem 2rem;
+}
+@media screen and (min-width: 640px) {
+  .footer__page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+  }
+}
+.footer__logo {
+  width: 50px;
+  aspect-ratio: 1;
+}
+.footer__social img {
+  width: 30px;
+  margin-right: 1.5rem;
+}
+.footer__social img:last-child {
+  margin-right: 0;
+}/*# sourceMappingURL=main.css.map */
